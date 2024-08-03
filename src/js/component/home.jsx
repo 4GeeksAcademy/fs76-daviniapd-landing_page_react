@@ -12,10 +12,12 @@ const Home = () => {
 		<>
 			<NavBar />
 			<Jumbotron />
+			<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 m-3 g-3 d-flex justify-content-around">
 			<Card />
 			<Card />
 			<Card />
 			<Card />
+			</div>
 			<Footer />
 
 		</>
