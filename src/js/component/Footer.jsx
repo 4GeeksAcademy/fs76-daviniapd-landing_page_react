@@ -2,15 +2,14 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="text-body-secondary py-5">
+        <footer className="text-light bg-dark py-4">
             <div className="container">
-                <p className="float-end mb-1">
-                    <a href="">Volver arriba</a>
+                <p className="float-end mt-2">
+                <a href=""><button type="button" class="btn btn-outline-info btn-sm">Back to top</button></a>
                 </p>
-                <p className="mb-1">El álbum de ejemplo es © Bootstrap, ¡pero descárgalo y personalízalo tú mismo!</p>
-                <p className="mb-0">¿Es nuevo en Bootstrap?
-                <a href="/">Visite la página de inicio</a>
-                <a href="/docs/5.3/getting-started/introduction/">guía de introducción</a> 
+                <p className="mb-1"> © Cartoon Saloon | Copyright 2024 </p>
+                <p className="mb-0">If you want to know more about us: 
+                <span> <a href="https://www.cartoonsaloon.ie/">Visit our old website</a></span>
                 .</p>
             </div>
         </footer>
