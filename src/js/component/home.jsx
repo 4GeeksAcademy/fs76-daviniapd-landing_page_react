@@ -2,7 +2,7 @@ import React from "react";
 
 //include images into your bundle
 import NavBar from "./NavBar.jsx";
-import { Jumbotron, SlideJumbotron } from "./Jumbotron.jsx";
+import Jumbotron from "./Jumbotron.jsx";
 import Card from "./Card.jsx";
 import Footer from "./Footer.jsx";
 import PropTypes from "prop-types";
@@ -12,23 +12,7 @@ const Home = () => {
 	return (
 		<>
 			<NavBar />
-			<Jumbotron>
-				<SlideJumbotron />
-				titleSlide: "1"
-				descriptionSlide: "1"
-				urlButtonSlide: ""
-				labelButtonSlide: "1"
-				<SlideJumbotron />
-				titleSlide: "2"
-				descriptionSlide: "2"
-				urlButtonSlide: ""
-				labelButtonSlide: "2"
-				<SlideJumbotron />
-				titleSlide: "3"
-				descriptionSlide: "3"
-				urlButtonSlide: ""
-				labelButtonSlide: "3"
-			</Jumbotron>
+			<Jumbotron />
 			<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 m-3 g-3 d-flex justify-content-around">
 				<Card
 					videoCard="https://www.youtube.com/embed/kHhmfNgQ2Bg"

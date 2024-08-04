@@ -1,13 +1,21 @@
-// import React from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
-// const SlideJumbotron = () => {
-//     return (
-//         <div className="carousel-caption d-block mb-4">
-//             <h5>First slide label</h5>
-//             <p>Some representative placeholder content for the first slide.</p>
-//             <button className="btn btn-success" target="_blank">Button 1</button>
-//         </div>
-//     );
-// };
+const SlideJumbotron = (props) => {
+    return (
+        <>
+            <h5>{props.titleSlide}</h5>
+            <p>{props.titleSlide}</p>
+            <button href={props.urlButtonSlide} className="btn btn-success" target="_blank">{props.labelButtonSlide}</button>
+        </>
+    );
+};
 
-// export default SlideJumbotron;
+SlideJumbotron.prototypes = {
+    titleSlide: PropTypes.string,
+    descriptionSlide: PropTypes.string,
+    urlButtonSlide: PropTypes.string,
+    labelButtonSlide: PropTypes.string
+};
+
+export default SlideJumbotron;
