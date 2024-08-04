@@ -13,7 +13,7 @@ const Home = () => {
 		<>
 			<NavBar />
 			<Jumbotron />
-			<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 m-3 g-3 d-flex justify-content-around">
+			<div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 m-3 g-3 d-flex justify-content-around">
 				<Card
 					videoCard="https://www.youtube.com/embed/kHhmfNgQ2Bg"
 					titleCard="My Father's Dragon"

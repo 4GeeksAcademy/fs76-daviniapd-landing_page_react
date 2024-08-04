@@ -2,8 +2,8 @@ import React from "react";
 import SlideJumbotron from "./SlideJumbotron";
 import PropTypes from "prop-types";
 import Kells from "/src/img/kells.png";
-import Song from "/src/img/song.png";
-import Wolf from "/src/img/wolf.png";
+import Song from "/src/img/song.jpg";
+import Wolf from "/src/img/wolf.jpg";
 
 const Jumbotron = () => {
     return (
@@ -27,7 +27,7 @@ const Jumbotron = () => {
                     <SlideJumbotron
                         backgroundImage={Song}
                         titleSlide="AWARDS & RECOGNITION"
-                        descriptionSlide="Cartoon Saloon has five Academy Award® and two Golden Globe® nominations and many award wins including BAFTA® and Emmy"
+                        descriptionSlide="Cartoon Saloon has five Academy Award® and two Golden Globe® nominations and many award wins including BAFTA® and Emmy."
                         urlButtonSlide=""
                         labelButtonSlide="About our services"
                     />

@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Kells from "/src/img/kells.png";
-import Song from "/src/img/song.png";
-import Wolf from "/src/img/wolf.png";
+
 
 const textStyles = {
     textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
