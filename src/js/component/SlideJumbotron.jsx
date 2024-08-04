@@ -1,17 +1,40 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Kells from "/src/img/kells.png";
+import Song from "/src/img/song.png";
+import Wolf from "/src/img/wolf.png";
+
+const textStyles = {
+    textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+}
 
 const SlideJumbotron = (props) => {
     return (
         <>
-            <h5>{props.titleSlide}</h5>
-            <p>{props.titleSlide}</p>
-            <button href={props.urlButtonSlide} className="btn btn-success" target="_blank">{props.labelButtonSlide}</button>
+            <svg
+                className="placeholder col-12 placeholder p-5 opacity-100"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                style={{
+                    backgroundImage: `url(${props.backgroundImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }}
+            >
+
+            </svg>
+            <div className="carousel-caption d-block mb-4" style={textStyles}>
+                <h2>{props.titleSlide}</h2>
+                <p>{props.descriptionSlide}</p>
+                <button href={props.urlButtonSlide} className="btn btn-success shadow-md" target="_blank">{props.labelButtonSlide}</button>
+            </div>
         </>
     );
 };
 
 SlideJumbotron.prototypes = {
+    backgroundImage: PropTypes.string,
     titleSlide: PropTypes.string,
     descriptionSlide: PropTypes.string,
     urlButtonSlide: PropTypes.string,

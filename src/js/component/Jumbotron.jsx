@@ -1,9 +1,9 @@
 import React from "react";
 import SlideJumbotron from "./SlideJumbotron";
 import PropTypes from "prop-types";
-
-
-
+import Kells from "/src/img/kells.png";
+import Song from "/src/img/song.png";
+import Wolf from "/src/img/wolf.png";
 
 const Jumbotron = () => {
     return (
@@ -15,44 +15,31 @@ const Jumbotron = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <svg className="placeholder col-12 placeholder p-5" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div className="carousel-caption d-block mb-4">
-                        <SlideJumbotron
-                            titleSlide="1"
-                            descriptionSlide="1"
-                            urlButtonSlide=""
-                            labelButtonSlide="1"
-                        />
-                    </div>
+                    <SlideJumbotron
+                        backgroundImage={Kells}
+                        titleSlide="ABOUT CARTOON SALOON"
+                        descriptionSlide="Cartoon Saloon is a world renowned animation studio and produces brave and beautiful shorts, feature films, and TV series. "
+                        urlButtonSlide=""
+                        labelButtonSlide="About Us"
+                    />
                 </div>
                 <div className="carousel-item">
-                    <svg className="placeholder col-12 placeholder p-5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div className="carousel-caption d-block mb-4">
-                        <SlideJumbotron
-                            titleSlide="2"
-                            descriptionSlide="2"
-                            urlButtonSlide=""
-                            labelButtonSlide="2"
-                        />
-                    </div>
+                    <SlideJumbotron
+                        backgroundImage={Song}
+                        titleSlide="AWARDS & RECOGNITION"
+                        descriptionSlide="Cartoon Saloon has five Academy Award® and two Golden Globe® nominations and many award wins including BAFTA® and Emmy"
+                        urlButtonSlide=""
+                        labelButtonSlide="About our services"
+                    />
                 </div>
                 <div className="carousel-item">
-                    <svg className="placeholder col-12 placeholder p-5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div className="carousel-caption d-block mb-4">
-
-                        <SlideJumbotron
-                            titleSlide="3"
-                            descriptionSlide="3"
-                            urlButtonSlide=""
-                            labelButtonSlide="3"
-                        />
-                    </div>
+                    <SlideJumbotron
+                        backgroundImage={Wolf}
+                        titleSlide="WHY WORK WITH US"
+                        descriptionSlide="Here at Cartoon Saloon our goal has always been to make original stories and foster the talent of our crew."
+                        urlButtonSlide=""
+                        labelButtonSlide="Contact Us"
+                    />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
