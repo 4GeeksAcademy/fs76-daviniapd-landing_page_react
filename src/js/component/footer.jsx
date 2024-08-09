@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 const FooterStyles = {
     background: "linear-gradient(to right, #1c774f, #1d4436)", 
@@ -11,7 +12,7 @@ const Footer = () => {
         <footer className="text-light bg-dark py-4" style={FooterStyles}>
             <div className="container">
                 <p className="float-end mt-2">
-                <button type="button" class="btn btn-outline-light btn-sm" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
+                <button type="button" className="btn btn-outline-light btn-sm" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
                 </p>
                 <p className="mb-1"> © Cartoon Saloon | Copyright 2024 </p>
                 <p className="mb-0">If you want to know more about us: 

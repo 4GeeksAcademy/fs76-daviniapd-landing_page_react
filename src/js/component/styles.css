@@ -1,0 +1,39 @@
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    outline: none;
+  }
+
+  .navbar-toggler {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-toggler:active {
+    transform: scale(1.1);
+    box-shadow: none;
+    border-color: white;
+    outline: none;
+  }
+  
+.navbar-toggler:hover {
+    transform: scale(1.05);
+  }
+
+  .dropdown-item {
+    transition: transform 0.3s ease-in-out;
+  }
+
+.dropdown-item:hover {
+    transform: scale(1.05);
+    
+  }
+
+  button {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+

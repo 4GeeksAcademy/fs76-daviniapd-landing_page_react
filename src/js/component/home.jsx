@@ -1,10 +1,10 @@
 import React from "react";
 
 //include images into your bundle
-import NavBar from "./NavBar.jsx";
-import Jumbotron from "./Jumbotron.jsx";
-import Card from "./Card.jsx";
-import Footer from "./Footer.jsx";
+import NavBar from "./navBar.jsx";
+import Jumbotron from "./jumbotron.jsx";
+import Card from "./card.jsx";
+import Footer from "./footer.jsx";
 import PropTypes from "prop-types";
 
 //create your first component

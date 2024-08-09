@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "/src/img/logo-cartoon-blanco.png"
+import "./styles.css";
 
 const NavBarStyles = {
     background: "linear-gradient(to right, #1c774f, #1d4436)",
@@ -17,7 +18,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-md navbar-dark px-5 py-1" style={NavBarStyles} aria-label="Third navbar example">
             <div className="container-fluid">
                 <img src={Logo} style={logoStyles} alt="" />
-                <button className="navbar-toggler text-light m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Alternar navegación">
+                <button className="navbar-toggler text-light m-2" id="iconNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Alternar navegación">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 

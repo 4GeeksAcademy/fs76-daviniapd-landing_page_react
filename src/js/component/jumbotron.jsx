@@ -1,9 +1,10 @@
 import React from "react";
-import SlideJumbotron from "./SlideJumbotron";
+import SlideJumbotron from "./slideJumbotron";
 import PropTypes from "prop-types";
 import Kells from "/src/img/kells.png";
 import Song from "/src/img/song.jpg";
 import Wolf from "/src/img/wolf.jpg";
+import "./styles.css";
 
 const titleStyles = {
     fontFamily: 'Montserrat, sans-serif',
